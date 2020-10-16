@@ -1,0 +1,10 @@
+C:\Git\CustomerReader\CustomerReader\bin\Debug\CustomerReader.exe.config
+C:\Git\CustomerReader\CustomerReader\bin\Debug\CustomerReader.exe
+C:\Git\CustomerReader\CustomerReader\bin\Debug\CustomerReader.pdb
+C:\Git\CustomerReader\CustomerReader\bin\Debug\Newtonsoft.Json.dll
+C:\Git\CustomerReader\CustomerReader\bin\Debug\Newtonsoft.Json.xml
+C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.csprojAssemblyReference.cache
+C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.csproj.CoreCompileInputs.cache
+C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.csproj.CopyComplete
+C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.exe
+C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.pdb

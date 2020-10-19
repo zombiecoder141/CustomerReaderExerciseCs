@@ -1,22 +1,22 @@
 # Introduction 
 This program was built on the following requirements:
 
-1. Create a system that will instantiate customer objects from files.
-    a. Read from CSV files with headers.
-    b. Read from XML files.
-    c. Read from JSON files.
-2. The program should output how many customers were made.
-    a. Sample: "Added this many customers: 6"
-3. The program should output an inspection of each customer.
-    a. The output should contain the following customer data:
-        1. Email Address (all lower case).
-        2. First Name (first letter capitalized).
-        3. Last Name (first letter capitalized).
-        4. Full Name (first letter of first and last capitalized).
-        5. Street Address (first letter of each word capitalized).
-        6. City (first letter capitalized).
-        7. State (All caps)
-        8. Zip Code
+* Create a system that will instantiate customer objects from files.
+  * Read from CSV files with headers.
+  * Read from XML files.
+  * Read from JSON files.
+* The program should output how many customers were made.
+  * Sample: "Added this many customers: 6"
+* The program should output an inspection of each customer.
+  * The output should contain the following customer data:
+    * Email Address (all lower case).
+    * First Name (first letter capitalized).
+    * Last Name (first letter capitalized).
+    * Full Name (first letter of first and last capitalized).
+    * Street Address (first letter of each word capitalized).
+    * City (first letter capitalized).
+    * State (All caps)
+    * Zip Code
 
 # Your task
 Re-evaluate the architecture, design, and implementation of the solution:

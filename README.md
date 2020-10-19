@@ -5,10 +5,8 @@ This program was built on the following requirements:
     a. Read from CSV files with headers.
     b. Read from XML files.
     c. Read from JSON files.
-
 2. The program should output how many customers were made.
     a. Sample: "Added this many customers: 6"
-
 3. The program should output an inspection of each customer.
     a. The output should contain the following customer data:
         1. Email Address (all lower case).

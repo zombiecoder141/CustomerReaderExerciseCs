@@ -20,11 +20,11 @@ This program was built on the following requirements:
 
 # Your task
 Re-evaluate the architecture, design, and implementation of the solution:
-1.	You have full control and are free to re-design it from the ground up. Utilize what you consider to be best practices and architecture/design principles and patterns.
-    a. If something doesn't make sense to you, feel free to change it.
-2.	Make sure the code is ready for a production environment.
-3.	Ensure that the code is easily readable and maintanable.
-4.	Make sure there are no bugs or errors in the code. 
+*	You have full control and are free to re-design it from the ground up. Utilize what you consider to be best practices and architecture/design principles and patterns.
+  * If something doesn't make sense to you, feel free to change it.
+*	Make sure the code is ready for a production environment.
+*	Ensure that the code is easily readable and maintanable.
+*	Make sure there are no bugs or errors in the code. 
 
 # Send us your solution
 Please clone this repository and complete your solution in the clone. Do not push to this repository.

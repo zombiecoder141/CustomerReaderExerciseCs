@@ -1,7 +1,7 @@
 # Introduction 
 This program was built on the following requirements:
 
-* Create a system that will instantiate customer objects from files.
+* Create a system that will instantiate customer objects from files. Samples of these files are included in the doc folder.
   * Read from CSV files with headers.
   * Read from XML files.
   * Read from JSON files.

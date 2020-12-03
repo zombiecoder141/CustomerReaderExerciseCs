@@ -1,4 +1,5 @@
 #Changes
+
 I have changed the names to reflect the model. I changed how the file structure is used.
 I added some more error logging.
 I also chose to incluide culture variants just in case

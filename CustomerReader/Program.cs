@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -10,24 +11,28 @@ using Newtonsoft.Json.Linq;
 
 namespace CustomerReader
 {
-    class CustomerReader
+    public class CustomerReader
     {
+        
         static void Main(string[] args)
         {
 
-            CustomerReader cr = new CustomerReader();
+             string filePath = "..\\..\\..\\doc\\";
 
-            cr.readCustomersCsv("C:\\Git\\CustomerReader\\doc\\customers.csv");
-            cr.readCustomersXml("..\\..\\..\\doc\\customers.xml");
-            cr.readCustomersJson("..\\..\\..\\doc\\customers.json");
+            CustomerReader cr = new CustomerReader();
+      
+
+            cr.ReadCustomersCsv(filePath+"customers.csv");
+            cr.ReadCustomersXml(filePath + "customers.xml");
+            cr.ReadCustomersJson(filePath+"customers.json");
 
             Console.WriteLine("Added this many customers: " + cr.getCustomers().Count + "\n");
-            cr.displayCustomers();
+            cr.DisplayCustomers();
             Console.ReadLine();
         }
-
-        private String filePath;
-        private List<Customer> customers;
+            
+       
+        private readonly List<Customer> customers;
 
         public CustomerReader()
         {
@@ -42,13 +47,13 @@ namespace CustomerReader
         /*
          * This method reads customers from a CSV file and puts them into the customers list.
          */
-        public void readCustomersCsv(String customer_file_path)
+        public void ReadCustomersCsv(string customer_file_path)
         {
 
             try
             {
                 StreamReader br = new StreamReader(File.Open(customer_file_path, FileMode.Open));
-                String line = br.ReadLine();
+                string line = br.ReadLine();
 
                 while (line != null)
                 {
@@ -69,14 +74,19 @@ namespace CustomerReader
                     line = br.ReadLine();
                 }
             }
+            catch (FileNotFoundException e)
+            {
+                Console.Write("Unable to find customer CSV File");
+                Console.Write(e.StackTrace);
+            }
             catch (IOException ex)
             {
-                Console.Write("OH NO!!!!");
+                Console.Write("Unable to read cusomer CSV File");
                 Console.Write(ex.StackTrace);
             }
         }
 
-        public void readCustomersXml(String customerFilePath)
+        public void ReadCustomersXml(String customerFilePath)
         {
             try
             {
@@ -112,12 +122,13 @@ namespace CustomerReader
             }
             catch (Exception e)
             {
+                Console.Write("Unable to read cusomer XML File");
                 Console.Write(e.StackTrace);
             }
         }
 
 
-        public void readCustomersJson(String customersFilePath)
+        public void ReadCustomersJson(String customersFilePath)
         {
             //JsonTextReader reader = (new JsonTextReader(System.IO.File.OpenText(customersFilePath));
             //JObject reader = JObject.Parse(File.ReadAllText(customersFilePath));
@@ -165,6 +176,7 @@ namespace CustomerReader
             }
             catch (FileNotFoundException e)
             {
+                Console.Write("Unable to find cusomer Json File");
                 Console.Write(e.StackTrace);
             }
             catch (IOException e)
@@ -177,18 +189,19 @@ namespace CustomerReader
             }
         }
 
-        public void displayCustomers()
+        public void DisplayCustomers()
         {
             foreach (Customer customer in this.customers)
             {
                 String customerString = "";
-                customerString += "Email: " + customer.email + "\n";
-                customerString += "First Name: " + customer.fn + "\n";
-                customerString += "Last Name: " + customer.ln + "\n";
+                customerString += "Email: " + customer.email.ToLower() + "\n";
+                customerString += "First Name: " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(customer.fn.ToLower()) + "\n";
+                customerString += "Last Name: " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(customer.ln.ToLower()) + "\n";
+                customerString += "Full Name: " + customer.GetFormattedName() + "\n";
                 customerString += "Phone Number: " + customer.phone + "\n";
-                customerString += "Street Address: " + customer.streetAddress + "\n";
-                customerString += "City: " + customer.city + "\n";
-                customerString += "State: " + customer.state + "\n";
+                customerString += "Street Address: " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(customer.streetAddress.ToLower()) + "\n";
+                customerString += "City: " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(customer.city.ToLower()) + "\n";
+                customerString += "State: " + customer.state.ToUpper() + "\n";
                 customerString += "Zip Code: " + customer.zipCode + "\n";
 
                 Console.WriteLine(customerString);

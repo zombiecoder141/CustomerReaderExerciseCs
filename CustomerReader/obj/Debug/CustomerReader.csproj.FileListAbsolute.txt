@@ -8,3 +8,12 @@ C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.csproj.CoreCompile
 C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.csproj.CopyComplete
 C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.exe
 C:\Git\CustomerReader\CustomerReader\obj\Debug\CustomerReader.pdb
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\bin\Debug\CustomerReader.exe.config
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\bin\Debug\CustomerReader.exe
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\bin\Debug\CustomerReader.pdb
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\obj\Debug\CustomerReader.csprojAssemblyReference.cache
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\obj\Debug\CustomerReader.csproj.CoreCompileInputs.cache
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\obj\Debug\CustomerReader.csproj.CopyComplete
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\obj\Debug\CustomerReader.exe
+C:\Users\Zombi\Source\Repos\zombiecoder141\CustomerReaderExerciseCs\CustomerReader\obj\Debug\CustomerReader.pdb
